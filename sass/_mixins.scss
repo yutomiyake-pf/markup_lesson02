@@ -2,6 +2,9 @@
 @mixin sectionWrap {
   max-width: vars.$contentMaxWidth;
   margin: 0 auto;
+  @media screen and (max-width: vars.$breakPoint) {
+    padding: 0 40px;
+  }
 }
 
 @mixin sectionTitle {

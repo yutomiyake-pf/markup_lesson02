@@ -1,3 +1,9 @@
+@use "vars";
+
 .mainVisual {
   margin-bottom: 60px;
+
+  @media screen and (max-width: vars.$breakPoint) {
+    padding: 0 10px;
+  }
 }

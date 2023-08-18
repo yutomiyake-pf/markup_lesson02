@@ -1,3 +1,5 @@
+@use "vars";
+
 .header {
   margin-top: 60px;
 
@@ -5,5 +7,9 @@
     width: 160px;
     line-height: 1px;
     margin-bottom: 15px;
+  }
+
+  @media screen and (max-width: vars.$breakPoint) {
+    padding: 0 10px;
   }
 }
