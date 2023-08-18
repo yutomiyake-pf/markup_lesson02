@@ -1,0 +1,52 @@
+@use "mixins";
+
+.detailSection {
+  margin-bottom: 100px;
+  &__wrap {
+    @include mixins.sectionWrap;
+  }
+  &__title {
+    @include mixins.sectionTitle;
+  }
+
+  &__content {
+    display: flex;
+  }
+
+  &__img {
+    width: 270px;
+    height: 270px;
+    margin-right: 60px;
+  }
+
+  &__contentTitle {
+    margin-bottom: 20px;
+    font-size: 1.125rem;
+    font-weight: bold;
+  }
+
+  &__dataList {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 16px 0;
+    margin-bottom: 25px;
+    border-top: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+  }
+
+  &__dataTitle {
+    width: 25%;
+  }
+
+  &__dataValue {
+    width: 75%;
+  }
+
+  &__param {
+    margin-bottom: 20px;
+  }
+
+  &__link {
+    text-decoration: underline;
+  }
+}

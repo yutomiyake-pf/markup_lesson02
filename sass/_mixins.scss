@@ -1,0 +1,12 @@
+@use "vars";
+@mixin sectionWrap {
+  max-width: vars.$contentMaxWidth;
+  margin: 0 auto;
+}
+
+@mixin sectionTitle {
+  font-weight: bold;
+  font-size: 1.125rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
